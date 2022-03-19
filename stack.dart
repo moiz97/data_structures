@@ -1,5 +1,8 @@
 class Stack<E> {
   Stack() : _storage = <E>[];
+  Stack.of(Iterable<E> elements)
+      : _storage = List<E>.of(
+            elements); //this constructor will be used to convert any kind of iterable into a stack
   final List<E> _storage;
 
   @override
@@ -33,4 +36,10 @@ void main(List<String> args) {
   print("Stack after pop operation: \n" + stack.toString());
   final topElement = stack.peek;
   print("Top element accessed using peek: $topElement");
+
+  //converting any iterable into a stack
+  const list = [1, 2, 3, 4, 5];
+  final stackFromList =
+      Stack.of(list); //remember the constructor we created in Stack class?
+  print("Stack from list: \n" + stackFromList.toString());
 }
