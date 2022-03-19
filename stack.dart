@@ -27,7 +27,7 @@ void main(List<String> args) {
   stack.push(1);
   stack.push(2);
   stack.push(3);
-  print("Origanl stack: \n" + stack.toString());
+  print("Orignal stack: \n" + stack.toString());
   final element = stack.pop();
   print("Popped: $element");
   print("Stack after pop operation: \n" + stack.toString());
