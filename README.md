@@ -13,6 +13,7 @@ I have always loved dart as the language, Data structures and algortihms are my 
 ## Usage
 
 To use this and play around with the code, you can simple fork this repository or download any particular file of your on choice.
+You can clone this repo using: gh repo clone moiz97/data_structures
 
 ## Credits
 
